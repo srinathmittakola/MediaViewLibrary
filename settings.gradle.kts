@@ -1,4 +1,12 @@
+
+
+
+
 pluginManagement {
+
+
+
+
     repositories {
         google {
             content {
@@ -18,6 +26,8 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
+
 
 rootProject.name = "MediaViewLibrary"
 include(":app")

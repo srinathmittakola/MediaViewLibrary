@@ -1,6 +1,27 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    id("com.android.library")
+    id("org.jetbrains.kotlin.android")
+    id("maven-publish")
+}
+
+afterEvaluate {
+
+    publishing {
+
+        publications {
+
+            create<MavenPublication>("release") {
+
+                from(components["release"])
+
+                groupId = "com.github.srinathmittakola"
+
+                artifactId = "mediaview"
+
+                version = "1.0.0"
+            }
+        }
+    }
 }
 
 android {
@@ -8,11 +29,8 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.srinath.mediaview"
         minSdk = 24
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

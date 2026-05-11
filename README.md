@@ -52,7 +52,7 @@ dependencyResolutionManagement {
 ## Step 2 — Add Dependency
 
 ```gradle
-implementation("com.github.srinathmittakola:MediaViewLibrary:1.0.0")
+implementation("com.github.srinathmittakola:MediaViewLibrary:1.0.2")
 ```
 
 ---

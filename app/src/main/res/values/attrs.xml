@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MediaView">
+        <attr name="android:scaleType" />
+        <attr name="loaderTint" format="color" />
+        <attr name="mediaCornerRadius" format="dimension" />
+        <attr name="mediaElevation" format="dimension" />
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -14,6 +14,7 @@ A lightweight Android custom view that automatically handles:
 
 ✅ Load Images from URL
 ✅ Load Lottie JSON animations from URL
+✅ Load Lottie GIF File from URL
 ✅ Automatic media type detection
 ✅ Built-in loading indicator
 ✅ RecyclerView friendly
@@ -52,7 +53,7 @@ dependencyResolutionManagement {
 ## Step 2 — Add Dependency
 
 ```gradle
-implementation("com.github.srinathmittakola:MediaViewLibrary:1.0.2")
+implementation("com.github.srinathmittakola:MediaViewLibrary:1.0.3")
 ```
 
 ---
@@ -62,10 +63,16 @@ implementation("com.github.srinathmittakola:MediaViewLibrary:1.0.2")
 ## XML
 
 ```xml
-<com.yourname.mediaview.MediaView
+<com.srinath.mediaview.MediaView
     android:id="@+id/mediaView"
-    android:layout_width="80dp"
-    android:layout_height="80dp"/>
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:loaderTint="#FF0000"
+    app:strokeColor="#000000"
+    app:strokeWidth="2dp"
+    android:scaleType="centerCrop" />
 ```
 
 ---

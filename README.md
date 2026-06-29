@@ -1,3 +1,6 @@
+[![](https://jitpack.io/v/srinathmittakola/MediaViewLibrary.svg)](https://jitpack.io/#srinathmittakola/MediaViewLibrary)
+
+
 # MediaView Library
 
 A lightweight Android custom view that automatically handles:
